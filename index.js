@@ -18,7 +18,7 @@ const tambahan = require("./lib/tambahan.js")
 const donasi = require("./lib/donasi.js");
 const info = require("./lib/info.js");
 /////////////////
-const BotName = 'ALF BOT'; 
+const BotName = 'Test Bot'; 
 const instagram = 'https://instagram.com/faizz._03'; 
 const whatsapp = 'wa.me/6289668729364'; 
 const kapanbotaktif = 'kapan kapan'; 
