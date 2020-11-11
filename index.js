@@ -17,6 +17,7 @@ const menu = require("./lib/menu.js");
 const tambahan = require("./lib/tambahan.js")
 const donasi = require("./lib/donasi.js");
 const info = require("./lib/info.js");
+const tts = require('node-gtts');
 /////////////////
 const BotName = 'Test Bot'; 
 const instagram = 'https://instagram.com/faizz._03'; 
@@ -626,12 +627,12 @@ if (text.includes("!animepict"))
     
     });
     }
- else if (text.includes("!ttsid")) {
+  if (text.includes("!ttsid")) {
   var teks = text.split("!ttsid ")[1];
   var path = require('path');
   var text1 = teks.slice(6);
   text1 = suara;
-  var suara = text.replace(/#ttsid/g, text1);
+  var suara = text.replace(/!ttsid/g, text1);
   var filepath = 'mp3/bacot.wav';
   
   
